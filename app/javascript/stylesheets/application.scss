@@ -13,7 +13,7 @@ body{
 }
 
 .navbar{
-    background-color: rgb(70, 69, 69) !important;
+    background-color: #2C2C2B !important;
 }
 
 .nav-item{
@@ -46,6 +46,12 @@ body{
     color: #d1c517;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+/* SHOWCASE */
 
 .showcase{
     width: 100%;
@@ -61,6 +67,27 @@ body{
     font-size: 18px;
 }
 
+
+/* CONTACT BUTTON */
+.card{
+    opacity: 0.6;
+    background-color: rgba(153, 143, 143, 0.438);
+    border: solid;
+    border-color: aliceblue;
+    margin-bottom: 30px;
+}
+.card a:hover{
+    color: #d1c517;
+}
+.p-card{
+    margin-bottom: 0px !important;
+    margin: 1rem;
+    color: aliceblue;
+    opacity: 1 !important;
+    text-decoration: none !important;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 975px){
     .container-fluid{
@@ -71,6 +98,6 @@ body{
     .showcase{
         height: 350px;
         background: url('~unionretro.jpg') center;
-     background-size: contain;
+        background-size: contain;
     }
 }
