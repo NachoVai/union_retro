@@ -3,6 +3,10 @@
 body{
     background-color: #f0f8ff;
     background: url('~fondo.jpg');
+    font-family: 'Orbitron', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 
 /* NAVBAR */
@@ -95,7 +99,7 @@ body{
     text-decoration: none !important;
 }
 
-
+/* LOGO INDEX */
 
 .logo-i{
     background: url('~logoprueba.png')no-repeat center;
@@ -105,6 +109,59 @@ body{
     margin-top: 30px;
 }
 
+/* FOOTER */
+
+footer{
+    margin-top: 50px;
+    background: url('~navbar3.jpg');
+    background-size: 100% 85%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+.text-uppercase{
+    color: #fff;
+}
+
+footer a{
+    color: aliceblue;
+}
+
+footer a:hover{
+    color: #ffd200;
+}
+
+.page-footer{
+    background-color: #666;
+}
+
+.footer-copyright{
+    background-color: #666;
+    padding: 5px;
+}
+
+/* REDES SOCIALES */
+
+/* SOCIAL MEDIA */
+
+.social{
+    margin: 30px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i{
+    font-size: 2rem;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1100px){
@@ -135,6 +192,10 @@ body{
         background: url('~unionretro2.jpg')no-repeat center center/cover;
         background-position-y: 50px;
     }    
+
+    footer.container-fluid{
+        padding-right: 0px !important;
+    }
 
 }
 
