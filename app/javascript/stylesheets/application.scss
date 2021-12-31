@@ -242,14 +242,19 @@ footer a:hover{
     border-radius: 10px;
     color: aliceblue;
     font-family: 'Abel', sans-serif;
+    font-size: 16px;
 }
 
 .band-body{
     padding: 70px 120px 150px 120px;
 }
 
+.band p{
+    
+}
+
 .card-title{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 
@@ -294,9 +299,9 @@ section[id="banner"]{
 }
 .presentation{
     display: grid;
-    gap: 3rem;
+    gap: 1rem;
     grid-auto-rows: 30rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     color: aliceblue;
 }
 
