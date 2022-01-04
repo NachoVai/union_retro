@@ -137,14 +137,14 @@ a{
 
 
 /* CONTACT BUTTON */
-.contact{
+.contact-button{
     opacity: 0.6;
     background-color: rgba(153, 143, 143, 0.438);
     border: solid;
     border-color: aliceblue;
     margin-bottom: 30px;
 }
-.contact a:hover{
+.contact-button a:hover{
     color: #ffd200;
 }
 .p-card{
@@ -249,9 +249,9 @@ footer a:hover{
     padding: 70px 120px 150px 120px;
 }
 
-.band p{
-    
-}
+/* .band p{
+    EN VEREMOS
+} */
 
 .card-title{
     font-size: 60px;
@@ -325,6 +325,37 @@ section[id="banner"]{
     border: 1px solid rgba(0, 0, 0, 0.71);
 }
 
+/* CONTACT PAGE */
+
+.contact{
+    width: 70%;
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    border: 1px solid rgba(0, 0, 0, 0.71);
+    /*  */
+    margin-inline-start: 15%;
+    padding: 30px;
+    margin-top: 165px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+
+.contact-body{
+    padding: 50px 150px 50px 150px;
+}
+.contact-body h3{
+    font-size: 22px;
+}
+.btn{
+    width: 100px !important;
+}
 
 
 /* RESPONSIVE */
@@ -373,6 +404,13 @@ section[id="banner"]{
 
     .band-body{
         padding: 70px 5px 150px 5px;
+    }
+    .contact{
+        width: 100%;
+        margin-inline-start: 0%;
+    }
+    .contact-body{
+        padding: 0 0 0 0;
     }
 }
 @media screen and (max-width: 400px){

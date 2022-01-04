@@ -1,21 +1,32 @@
-<h1>Contacto</h1>
+<section>
+    <div class="card contact shadow">
+        <div class="card-body contact-body">
+            <% flash.each do |type, msg| %>
+                <div class="alert alert-success">
+                    <%= msg %>
+                </div>
+            <% end %>
+            <h1 class="card-title">Contacto</h1>
+            <h3>Déjenos un mensaje</h3><br>
+            <%= form_with(model: @contact, local: true) do |form| %>
+                <div class="mb-3">
+                    <%= form.label :nombre, class:"form-label"%>
+                    <%= form.text_field :name, class:"form-control"%>
+                </div>
+                <div class="mb-3">
+                    <%= form.label :email, class:"form-label"%>
+                    <%= form.text_field :email, class:"form-control"%>
+                    <div id="emailHelp" class="form-text">No compartiremos tu email con nadie mas.</div>
+                </div>
+                <div class="mb-3">
+                    <%= form.label :mensaje, class:"form-label"%>
+                    <%= form.text_area :message, class:"form-control"%>
+                </div>
+                <div>
+                    <%= form.submit "Enviar", :class => "btn btn-primary"%>
+                </div>
+            <%end%>
+        </div>
+    </div>
+</section>
 
-<h3>Déjenos un mensaje</h3>
-
-<%= form_with(model: @contact, local: true) do |form| %>
-    <div>
-        <%= form.label :nombre%>
-        <%= form.text_field :name%>
-    </div>
-    <div>
-        <%= form.label :email%>
-        <%= form.text_field :email%>
-    </div>
-    <div>
-        <%= form.label :mensaje%>
-        <%= form.text_area :message%>
-    </div>
-    <div>
-        <%= form.submit%>
-    </div>
-<%end%>
