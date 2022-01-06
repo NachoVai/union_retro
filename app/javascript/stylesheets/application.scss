@@ -395,6 +395,14 @@ section[id="banner"]{
     .band-body{
         padding: 70px 60px 150px 60px;
     }
+
+    .contact{
+        width: 84%;
+        margin-inline-start: 8%;
+    }
+    .contact-body{
+        padding: 50px;
+    }
     
 }
 @media screen and (max-width: 500px){
@@ -410,7 +418,7 @@ section[id="banner"]{
         margin-inline-start: 0%;
     }
     .contact-body{
-        padding: 0 0 0 0;
+        padding: 50px 0 50px 0;
     }
 }
 @media screen and (max-width: 400px){
