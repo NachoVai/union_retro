@@ -242,16 +242,12 @@ footer a:hover{
     border-radius: 10px;
     color: aliceblue;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .band-body{
     padding: 70px 120px 150px 120px;
 }
-
-/* .band p{
-    EN VEREMOS
-} */
 
 .card-title{
     font-size: 60px;
@@ -294,35 +290,27 @@ section[id="banner"]{
 
 
 /* INTEGRANTS PRESENTATION */
-.p-gallery{
-    width: 70%;
-}
-.presentation{
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 30rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    color: aliceblue;
-}
 
-.presentation h5{
-    font-size: 24px;
-}
-.presentation p{
-    font-size: 12px;
-}
 .card-img-top{
     height: 370px;
     border-radius: 1rem 1rem 0 0;
 }
 
-.presentation article{
+.container article{
+    color: aliceblue;
+    font-family: 'Abel', sans-serif;
+}
+.presentation{
     background: rgba(0, 0, 0, 0.48);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.1px);
-    -webkit-backdrop-filter: blur(5.1px);
     border: 1px solid rgba(0, 0, 0, 0.71);
+}
+article h5{
+    font-size: 40px !important;
+}
+article p{
+    font-size: 20px !important;
 }
 
 /* CONTACT PAGE */
@@ -439,16 +427,5 @@ section[id="banner"]{
     .band{
         width: 100%;
         margin-inline-start: 0%;
-    }
-
-    .p-gallery{
-        width: 85%;
-    }
-
-
-    @media screen and (max-width: 300px){
-        .p-gallery{
-            width: 100%;
-        }
     }
 }
