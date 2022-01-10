@@ -5,14 +5,19 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.create(name: params[:contact][:name], email: params[:contact][:email], message: params[:contact][:message])
-    
+    @contact = Contact.create(contacts_params)
+
     if @contact.valid?
-      redirect_to contacts_new_path, alert: "*Mensaje enviado con éxito."
+      redirect_to contacts_new_path, notice: "Tu mensaje fue enviado con éxito."
     else
-      redirect_to contacts_new_path, alert: "*Ingrese un email válido."
-    end  
+      render :new
+    end
   end
 
+  private
+
+  def contacts_params
+    params.require(:contact).permit(:name, :email, :message)
+  end
 
 end

@@ -1,14 +1,29 @@
 <section>
     <div class="card contact shadow">
-        <div class="card-body contact-body">
-            <% flash.each do |type, msg| %>
-                <div class="alert alert-success">
-                    <%= msg %>
-                </div>
-            <% end %>
+        <div class="card-body contact-body">   
             <h1 class="card-title">Contacto</h1>
             <h3>Déjenos un mensaje</h3><br>
+
+            
             <%= form_with(model: @contact, local: true) do |form| %>
+                <% if @contact.errors.any? %>
+                    <div id="error_explanation" class="alert alert-danger">
+                        <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+                        <ul>
+                            <% @contact.errors.full_messages.each do |message| %>
+                                <li><%= message %></li>
+                            <% end %>
+                        </ul>
+                    </div><br>
+                <% end %>
+                
+                <% flash.each do |type, msg| %>
+                    <div class="alert alert-info">
+                        <%= msg %>
+                    </div>
+                <% end %>
+
                 <div class="mb-3">
                     <%= form.label :nombre, class:"form-label"%>
                     <%= form.text_field :name, class:"form-control"%>
