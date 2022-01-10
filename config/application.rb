@@ -18,5 +18,6 @@ module Ur
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.action_mailer.asset_host = 'http://localhost:3000'
   end
 end
