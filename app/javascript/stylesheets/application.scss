@@ -54,7 +54,7 @@ table {
 
 body{
     background-color: #f0f8ff;
-    background: url('~fondo.jpg');
+    background: url('../images/fondo.jpg');
     font-family: 'Orbitron', sans-serif;
     min-width: fit-content;
     
@@ -78,7 +78,7 @@ a{
 
 
 .navbar{
-    background: url('~navbar10.jpg');
+    background: url('../images/navbar10.jpg');
     /* background-size: 100% 100%; */
     image-rendering: auto;
     image-rendering: crisp-edges;
@@ -126,7 +126,7 @@ a{
 .showcase{
     width: 100%;
     height: 860px;
-    background: url('~showcase.jpg')no-repeat center center/cover;
+    background: url('../images/showcase.jpg')no-repeat center center/cover;
     background-position-y: 25px;
     padding: 50px;
     display: flex;
@@ -162,7 +162,7 @@ a{
 /* LOGO INDEX */
 
 .logo-i{
-    background: url('~logoprueba.png')no-repeat center;
+    background: url('../images/logoprueba.png')no-repeat center;
     background-size: contain;
     height: 400px;
     width: 100%;
@@ -173,7 +173,7 @@ a{
 
 footer{
     margin-top: 50px;
-    background: url('~navbar3.jpg');
+    background: url('../images/navbar3.jpg');
     background-size: 100% 90%;
     image-rendering: auto;
     image-rendering: crisp-edges;
@@ -265,7 +265,7 @@ section[id="banner"]{
     margin: 40px 0px 40px 0px;
 }
 .banner{
-    background: url('~banner.png'), rgba(255, 255, 255, 0.15);
+    background: url('../images/banner.png'), rgba(255, 255, 255, 0.15);
     /* From https://css.glass */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.9px);
@@ -371,7 +371,7 @@ article p{
     }
 
     .navbar{
-        background: url('~navbar10.jpg')no-repeat;
+        background: url('../images/navbar10.jpg')no-repeat;
         background-size: 170%;
         image-rendering: auto;
         image-rendering: crisp-edges;
@@ -389,7 +389,7 @@ article p{
 
     .showcase{
         height: 550px;
-        background: url('~showcase2.jpg')no-repeat center center/cover;
+        background: url('../images/showcase2.jpg')no-repeat center center/cover;
         background-position-y: 50px;
     }    
 
@@ -439,7 +439,7 @@ article p{
         padding-left: 2rem;
     }
     .showcase{
-        background: url('~showcase2.jpg')no-repeat center center/cover;
+        background: url('../images/showcase2.jpg')no-repeat center center/cover;
         background-position-y: 65px;
     }
 
