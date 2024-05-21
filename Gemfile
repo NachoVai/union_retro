@@ -3,7 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.1'
 
-
+gem 'dotenv', '~> 3.1', '>= 3.1.2'
+gem 'dotenv-rails', '~> 3.1', '>= 3.1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.1', '>= 7.1.3.3'
 # Use psql as the database for Active Record
