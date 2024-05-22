@@ -27,7 +27,8 @@ gem 'nokogiri', '~> 1.16', '>= 1.16.5'
 # gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+#JS compressor
+gem 'terser', '~> 1.2', '>= 1.2.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

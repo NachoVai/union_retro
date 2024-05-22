@@ -23,3 +23,5 @@ services:
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
+      - name: Precompile assets
+        script: ./precompile_assets.sh
